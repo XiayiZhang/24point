@@ -1,0 +1,52 @@
+<label for="name">Name (4 to 8 characters):</label>
+<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+<input type="button" value="1" onclick="exe()">
+  <script>
+    function exe(){
+      var a=document.getElementById("a");
+      var b=document.getElementById("b");
+      var c=document.getElementById("c");
+      var d=document.getElementById("d");
+      function compare(e,f,g,h){
+        if(e=[0123456789jqkJQK] && f=[0123456789jqkJQK] && g=[0123456789jqkJQK] && h=[0123456789jqkJQK]&&){
+          if(e=="j"){
+            var e=11
+          }else if(e=="q"){
+            var e=12
+          }else if(e=="k"){
+            var e=13
+          }else if(f=="j"){
+            var f=11
+          }else if(f=="q"){
+            var f=12
+          }else if(f=="k"){
+            var f=13
+          }else if(g=="j"){
+            var g=11
+          }else if(g=="q"){
+            var g=12
+          }else if(g=="k"){
+            var g=13
+          }else if(h=="j"){
+            var h=11
+          }else if(h=="q"){
+            var h=12
+          }else if(e=="k"){
+            var h=13
+          }//转换
+          if(e<f){
+            if(f<g || f=g){
+              if(g<h || g==h){
+                return [e,f,g,h]
+              }else if(h<g){
+                return [e,f,h,g]
+              }
+            }
+          }
+        }else{alert("请输入数字或者J、Q、K")}
+      }
+    }
+    var value=compare(a,b,c,d)
+  </script>
+</body>
+</html>
